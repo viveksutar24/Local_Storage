@@ -18,7 +18,8 @@ export class TASKMANAGEMENTComponent implements OnInit {
 
   }
 
-  save() {
+  
+  save(): void {
     if (this.tdate == "") {
       alert("Enter Date");
       return;

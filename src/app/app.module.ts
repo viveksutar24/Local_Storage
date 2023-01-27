@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { CookiesComponent } from './cookies/cookies.component';
 import { LocalstorageComponent } from './localstorage/localstorage.component';
 import { TASKMANAGEMENTComponent } from './task-management/task-management.component';
+import { Taskmanagement2Component } from './taskmanagement2/taskmanagement2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CookiesComponent,
     LocalstorageComponent,
-    TASKMANAGEMENTComponent
+    TASKMANAGEMENTComponent,
+    Taskmanagement2Component
   ],
   imports: [
     BrowserModule,
