@@ -12,13 +12,13 @@ export class TASKMANAGEMENTComponent implements OnInit {
   ttask: string = ""
   tasks = new Array();
 
+
   ngOnInit(): void {
 
     this.tasks = JSON.parse(localStorage.getItem("tasks") || '{}');
 
   }
 
-  
   save(): void {
     if (this.tdate == "") {
       alert("Enter Date");
@@ -33,6 +33,10 @@ export class TASKMANAGEMENTComponent implements OnInit {
       return;
     }
 
+
+
+
+
     let task = { date: this.tdate, time: this.ttime, task: this.ttask };
 
     this.tasks = JSON.parse(localStorage.getItem("tasks") || '[]');
@@ -40,6 +44,13 @@ export class TASKMANAGEMENTComponent implements OnInit {
     this.tasks.push(task);
 
     localStorage.setItem("tasks", JSON.stringify(this.tasks));
+
+  }
+
+
+  edit(id: any) {
+    alert("helloo");
+    this.tdate == this.tdate;
 
   }
 

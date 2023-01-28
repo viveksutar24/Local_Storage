@@ -20,6 +20,7 @@
 
   <div class="row">
     <div class="table table-scrollable">
+
       <table class="table table-bordered table-stripped">
 
         <tr>
@@ -29,10 +30,17 @@
         </tr>
 
         <tr *ngFor="let task of tasks">
+
+          <td>
+            <button (click)="edit()" class="btn btn-outline-primary">Edit</button>
+            <button  class="btn btn-outline-danger">Update</button>
+          </td>
           <td>{{task.date}}</td>
           <td>{{task.time}}</td>
           <td>{{task.task}}</td>
         </tr>
+
+
 
       </table>
 
