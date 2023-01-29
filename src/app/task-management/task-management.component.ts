@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TASKMANAGEMENTComponent implements OnInit {
 
-  tdate: string = ""
-  ttime: string = ""
-  ttask: string = ""
+  tdate: string = "";
+  ttime: string = "";
+  ttask: string = "";
   tasks = new Array();
+
 
 
   ngOnInit(): void {
@@ -34,9 +35,6 @@ export class TASKMANAGEMENTComponent implements OnInit {
     }
 
 
-
-
-
     let task = { date: this.tdate, time: this.ttime, task: this.ttask };
 
     this.tasks = JSON.parse(localStorage.getItem("tasks") || '[]');
@@ -47,11 +45,22 @@ export class TASKMANAGEMENTComponent implements OnInit {
 
   }
 
-
-  edit(id: any) {
-    alert("helloo");
-    this.tdate == this.tdate;
-
+  delete(i:any) {
+    this.tasks.splice(i,1);
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

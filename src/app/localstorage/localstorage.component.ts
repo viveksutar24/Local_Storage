@@ -22,7 +22,7 @@ export class LocalstorageComponent implements OnInit {
 
     localStorage.setItem("products2", JSON.stringify(this.products2));
 
-    console.log(this.products2);
+    // console.log(this.products2);
 
   }
 

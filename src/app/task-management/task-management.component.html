@@ -29,18 +29,18 @@
           <th>Task</th>
         </tr>
 
-        <tr *ngFor="let task of tasks">
+        <tr *ngFor="let task of tasks;let i =index">
 
           <td>
-            <button (click)="edit()" class="btn btn-outline-primary">Edit</button>
-            <button  class="btn btn-outline-danger">Update</button>
+            <button class="btn btn-outline-primary">Edit</button>
+            <button (click)="delete(i)" class="btn btn-outline-danger">Delete</button>
           </td>
+          <td>{{i+1}}</td>
           <td>{{task.date}}</td>
-          <td>{{task.time}}</td>
+          <td>{{task.time}}</td> 
           <td>{{task.task}}</td>
+
         </tr>
-
-
 
       </table>
 
