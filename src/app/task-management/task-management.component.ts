@@ -49,6 +49,10 @@ export class TASKMANAGEMENTComponent implements OnInit {
     this.tasks.splice(i,1);
   }
 
+  edit(){
+    
+  }
+
 }
 
 
